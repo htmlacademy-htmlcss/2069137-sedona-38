@@ -97,6 +97,26 @@
         <button class="submit-button reset-button">Сбросить</button>
       </form>
     </header>
+
+    <section class="sorting">
+      <h2 class="sorting-title visually-hidden">Сортировка гостиниц</h2>
+      <p class="sorting-result"><b>Найдено гостиниц: 38</b></p>
+      <select name="hotel-sort" id="hotel-sort">
+        <option value="cheap-first" selected>Сначала дешевые</option>
+      </select>
+      <ul class="cards-view-list">
+        <li class="cards-view-item">
+          <button class="cards-view-button cards-table" type="button"><span class="visually-hidden">табличная раскладка</span></button>
+        </li>
+        <li class="cards-view-item">
+          <button class="cards-view-button cards-big" type="button"><span class="visually-hidden">большие карточки</span></button>
+        </li>
+        <li class="cards-view-item">
+          <button class="cards-view-button cards-list" type="button"><span class="visually-hidden">список карточек</span></button>
+        </li>
+      </ul>
+    </section>
+
     <section class="follow-us follow-us-catalog">
       <h2 class="follow-us-title">Подпишитесь на рассылку</h2>
       <p class="follow-us-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
