@@ -7,7 +7,7 @@
 <body>
   <header class="page-header">
     <nav class="header-nav">
-      <a class="logo"><img src="#" alt="логотип Sedona" /></a>
+      <a class="logo" href="index.html"><img src="#" alt="логотип Sedona"></a>
       <ul class="nav-list">
         <li class="nav-item"><a href="index.html">Главная</a></li>
         <li class="nav-item"><a href="#">О Седоне</a></li>
@@ -24,16 +24,17 @@
       </ul>
     </nav>
   </header>
-  <main class="inner-main">
-    <header class="filter">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="crumbs-list">
-          <li class="crumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
-          <li class="crumbs-item">Гостиницы</li>
-        </ul>
+
+  <main class="main-catalog">
+    <header class="inner-header filter">
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <ul class="crumbs-list">
+        <li class="crumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+        <li class="crumbs-item"><a class="current-crumb-link">Гостиницы</a></li>
+      </ul>
 
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="hotel-includes">
+        <fieldset class="filter-hotel-includes">
           <legend class="hotel-includes-title">Инфраструктура:</legend>
           <ul class="hotel-includes-list">
             <li class="hotel-includes-item">
@@ -57,7 +58,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="hotel-housing">
+        <fieldset class="filter-hotel-housing">
           <legend class="hotel-housing-title">Тип жилья:</legend>
           <ul class="hotel-housing-list">
             <li class="hotel-housing-item">
@@ -80,28 +81,30 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="hotel-price">
+
+        <fieldset class="filter-hotel-price">
           <legend class="hotel-price-title">Стоимость, ₽:</legend>
           <label class="price-label">
-            <input class="price-input" type="number" placeholder="от" value="0" min="0" max="9000">
             <span class="visually-hidden">Цена от</span>
+            <input class="price-input" type="number" placeholder="от" value="0" min="0" max="10000">
           </label>
           <label class="price-label">
-            <input class="price-input" type="number" placeholder="до" value="9000" min="0" max="9000">
             <span class="visually-hidden">Цена до</span>
+            <input class="price-input" type="number" placeholder="до" value="9000" min="0" max="10000">
           </label>
-          <input class="price-input-range" type="range">
+          <input class="price-input-range" min="0" max="10000" value="0" type="range">
+          <input class="price-input-range" min="0" max="10000" value="9000" type="range">
         </fieldset>
 
-        <button class="submit-button">Применить</button>
-        <button class="submit-button reset-button">Сбросить</button>
+        <button class="filter-submit-button">Применить</button>
+        <button class="filter-reset-button">Сбросить</button>
       </form>
     </header>
 
-    <section class="sorting">
-      <h2 class="sorting-title visually-hidden">Сортировка гостиниц</h2>
+    <section class="hotel-catalog">
+      <h2 class="hotel-catalog-title">Гостиницы Седона</h2>
       <p class="sorting-result"><b>Найдено гостиниц: 38</b></p>
-      <select name="hotel-sort" id="hotel-sort">
+      <select name="hotel-catalog-sort" id="hotel-catalog-sort">
         <option value="cheap-first" selected>Сначала дешевые</option>
       </select>
       <ul class="cards-view-list">
@@ -115,10 +118,7 @@
           <button class="cards-view-button cards-list" type="button"><span class="visually-hidden">список карточек</span></button>
         </li>
       </ul>
-    </section>
 
-    <section class="cards">
-      <h2 class="cards-title">Гостиницы Седона</h2>
       <ul class="cards-list">
         <li class="cards-item">
           <img class="card-image" src="#" alt="Вид из пещеры на звёздное небо">
@@ -201,10 +201,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="social-list">
-      <li class="social-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a></li>
-      <li class="social-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
-      <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
+    <ul class="socials-list">
+      <li class="socials-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a></li>
+      <li class="socials-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
+      <li class="socials-item"><a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
     </ul>
     <p class="footer-phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
     <p class="footer-our-link"><a href="https://htmlacademy.ru/"><img src="#" alt="логотип htmlacademy"></a></p>
