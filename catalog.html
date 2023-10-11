@@ -5,9 +5,9 @@
   <title>Каталог</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <nav class="header-nav">
-      <a class="logo" href="#"><img src="images/header-logo.svg" alt="логотип Sedona" width="140" height="70"></a>
+      <a class="logo" href="#"><img src="#" alt="логотип Sedona" /></a>
       <ul class="nav-list">
         <li class="nav-item"><a class="active-link" href="#">Главная</a></li>
         <li class="nav-item"><a href="#">О Седоне</a></li>
@@ -25,8 +25,8 @@
     </nav>
   </header>
 
-  <main class="main-catalog">
-    <header class="inner-header filter">
+  <main class="main-catalog" data-test="main">
+    <header class="inner-header filter" data-test="filter">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="crumbs-list">
         <li class="crumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
@@ -100,7 +100,7 @@
       </form>
     </header>
 
-    <section class="hotel-catalog">
+    <section class="hotel-catalog" data-test="catalog">
       <h2 class="hotel-catalog-title">Гостиницы Седона</h2>
       <div class="hotel-catalog-wrapper">
         <p class="sorting-result"><b>Найдено гостиниц: 38</b></p>
@@ -123,7 +123,7 @@
       </div>
       <ul class="hotels-list">
         <li class="hotels-item">
-          <img class="hotel-image" src="images/hotel-1.jpg" alt="Вид из пещеры на звёздное небо" width="300" height="212">
+          <img class="hotel-image" src="#" alt="Вид из пещеры на звёздное небо">
           <h3 class="hotel-title">Amara Resort & Spa</h3>
           <p class="hotel-description">
             <span class="hotel-type">Гостиница</span>
@@ -132,12 +132,12 @@
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
           <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-4.png" alt="4 звезды" width="140" height="37">
+            <img class="hotel-rating-image" src="#" alt="4 звезды">
             <span class="hotel-rating-value">Рейтинг: 8,5</span>
           </p>
         </li>
         <li class="hotels-item">
-          <img class="hotel-image" src="images/hotel-2.jpg" alt="Вид на гору и радугу" width="300" height="212">
+          <img class="hotel-image" src="#" alt="Вид на гору и радугу">
           <h3 class="hotel-title">Villas at Poco Diablo</h3>
           <p class="hotel-description">
             <span class="hotel-type">Гостиница</span>
@@ -146,12 +146,12 @@
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button my-favorite-hotel" type="button">в избранном</button>
           <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-4.png" alt="4 звезды" width="140" height="37">
+            <img class="hotel-rating-image" src="#" alt="4 звезды">
             <span class="hotel-rating-value">Рейтинг: 9,2</span>
           </p>
         </li>
         <li class="hotels-item">
-          <img class="hotel-image" src="images/hotel-3.jpg" alt="Вид на гору в солнечную погоду" width="300" height="212">
+          <img class="hotel-image" src="#" alt="Вид на гору в солнечную погоду">
           <h3 class="hotel-title">Desert Quail Inn</h3>
           <p class="hotel-description">
             <span class="hotel-type">Гостиница</span>
@@ -160,12 +160,12 @@
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
           <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-3.png" alt="3 звезды" width="140" height="37">
+            <img class="hotel-rating-image" src="#" alt="3 звезды">
             <span class="hotel-rating-value">Рейтинг: 6,9</span>
           </p>
         </li>
         <li class="hotels-item">
-          <img class="hotel-image" src="images/hotel-4.jpg" alt="Вид на гору ночью" width="300" height="212">
+          <img class="hotel-image" src="#" alt="Вид на гору ночью">
           <h3 class="hotel-title">GreenTree Inn</h3>
           <p class="hotel-description">
             <span class="hotel-type">Гостиница</span>
@@ -174,7 +174,7 @@
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
           <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-2.png" alt="2 звезды" width="140" height="37">
+            <img class="hotel-rating-image" src="#" alt="2 звезды">
             <span class="hotel-rating-value">Рейтинг: 5,0</span>
           </p>
         </li>
@@ -189,7 +189,7 @@
       </ul>
     </section>
 
-    <section class="follow-us">
+    <section class="follow-us" data-test="subscribe">
       <h2 class="follow-us-title">Подпишитесь на рассылку</h2>
       <p class="follow-us-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
@@ -199,14 +199,14 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <ul class="socials-list">
       <li class="socials-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a></li>
       <li class="socials-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
       <li class="socials-item"><a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
     </ul>
     <p class="footer-phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-    <p class="footer-our-link"><a href="https://htmlacademy.ru/"><img src="images/htmlacademy-logo.svg" alt="логотип htmlacademy" width="114.9" height="32.9"></a></p>
+    <p class="footer-our-link"><a href="https://htmlacademy.ru/"><img src="#" alt="логотип htmlacademy"></a></p>
   </footer>
 </body>
 </html>
