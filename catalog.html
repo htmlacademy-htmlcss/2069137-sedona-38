@@ -18,7 +18,7 @@
           <a href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="nav-item">
-          <a href="#"><span class="visually-hidden">Избранные</span></a>
+          <a href="#"><span class="visually-hidden">Избранные</span><span class="header-favorites-value">12</span></a>
         </li>
         <li class="nav-item"><a href="#">Хочу сюда!</a></li>
       </ul>
@@ -103,7 +103,7 @@
     <section class="hotel-catalog" data-test="catalog">
       <h2 class="hotel-catalog-title">Гостиницы Седона</h2>
       <div class="hotel-catalog-wrapper">
-        <p class="sorting-result"><b>Найдено гостиниц: 38</b></p>
+        <p class="sorting-result">Найдено гостиниц: <span class="sorting-result-value">38</span></p>
         <div class="hotel-catalog-sort">
           <select name="hotel-catalog-sort-method" id="hotel-catalog-sort-method">
             <option value="cheap-first" selected>Сначала дешевые</option>
@@ -125,58 +125,122 @@
         <li class="hotels-item">
           <img class="hotel-image" src="images/hotel-1.jpg" alt="Вид из пещеры на звёздное небо." width="300" height="212">
           <h3 class="hotel-title">Amara Resort & Spa</h3>
-          <p class="hotel-description">
-            <span class="hotel-type">Гостиница</span>
-            <span class="hotel-price">От 4000 ₽</span>
-          </p>
+          <div class="hotel-description">
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">От <span class="hotel-price-value">4000</span> ₽</p>
+          </div>
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
-          <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-4.png" alt="4 звезды." width="140" height="37">
-            <span class="hotel-rating-value">Рейтинг: 8,5</span>
-          </p>
+          <div class="hotel-rating">
+            <ol class="rating-stars-list rating-stars-4">
+              <li class="rating-stars-item">
+                <span class="visually-hidden">1 звезда</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">2 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">3 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">4 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">5 звёзд</span>
+              </li>
+            </ol>
+            <p class="hotel-rating-text">Рейтинг: <span class="hotel-rating-value">8,5</span></p>
+          </div>
         </li>
         <li class="hotels-item">
           <img class="hotel-image" src="images/hotel-2.jpg" alt="Вид на гору и радугу." width="300" height="212">
           <h3 class="hotel-title">Villas at Poco Diablo</h3>
-          <p class="hotel-description">
-            <span class="hotel-type">Гостиница</span>
-            <span class="hotel-price">От 5000 ₽</span>
-          </p>
+          <div class="hotel-description">
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">От <span class="hotel-price-value">5000</span> ₽</p>
+          </div>
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button my-favorite-hotel" type="button">в избранном</button>
-          <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-4.png" alt="4 звезды." width="140" height="37">
-            <span class="hotel-rating-value">Рейтинг: 9,2</span>
-          </p>
+          <div class="hotel-rating">
+            <ol class="rating-stars-list rating-stars-4">
+              <li class="rating-stars-item">
+                <span class="visually-hidden">1 звезда</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">2 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">3 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">4 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">5 звёзд</span>
+              </li>
+            </ol>
+            <p class="hotel-rating-text">Рейтинг: <span class="hotel-rating-value">9,2</span></p>
+          </div>
         </li>
         <li class="hotels-item">
           <img class="hotel-image" src="images/hotel-3.jpg" alt="Вид на гору в солнечную погоду." width="300" height="212">
           <h3 class="hotel-title">Desert Quail Inn</h3>
-          <p class="hotel-description">
-            <span class="hotel-type">Гостиница</span>
-            <span class="hotel-price">От 2500 ₽</span>
-          </p>
+          <div class="hotel-description">
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">От <span class="hotel-price-value">2500</span> ₽</p>
+          </div>
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
-          <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-3.png" alt="3 звезды." width="140" height="37">
-            <span class="hotel-rating-value">Рейтинг: 6,9</span>
-          </p>
+          <div class="hotel-rating">
+            <ol class="rating-stars-list rating-stars-3">
+              <li class="rating-stars-item">
+                <span class="visually-hidden">1 звезда</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">2 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">3 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">4 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">5 звёзд</span>
+              </li>
+            </ol>
+            <p class="hotel-rating-text">Рейтинг: <span class="hotel-rating-value">6,9</span></p>
+          </div>
         </li>
         <li class="hotels-item">
           <img class="hotel-image" src="images/hotel-4.jpg" alt="Вид на гору ночью." width="300" height="212">
           <h3 class="hotel-title">GreenTree Inn</h3>
-          <p class="hotel-description">
-            <span class="hotel-type">Гостиница</span>
-            <span class="hotel-price">От 1500 ₽</span>
-          </p>
+          <div class="hotel-description">
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-price">От <span class="hotel-price-value">1500</span> ₽</p>
+          </div>
           <a href="#" class="hotel-more">подробнее</a>
           <button class="hotel-favorites-button" type="button">в избранное</button>
-          <p class="hotel-rating">
-            <img class="hotel-rating-image" src="images/stars-2.png" alt="2 звезды." width="140" height="37">
-            <span class="hotel-rating-value">Рейтинг: 5,0</span>
-          </p>
+          <div class="hotel-rating">
+            <ol class="rating-stars-list rating-stars-2">
+              <li class="rating-stars-item">
+                <span class="visually-hidden">1 звезда</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">2 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">3 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">4 звезды</span>
+              </li>
+              <li class="rating-stars-item">
+                <span class="visually-hidden">5 звёзд</span>
+              </li>
+            </ol>
+            <p class="hotel-rating-text">Рейтинг: <span class="hotel-rating-value">5,0</span></p>
+          </div>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -205,8 +269,8 @@
       <li class="socials-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
       <li class="socials-item"><a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
     </ul>
-    <p class="footer-phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-    <p class="footer-our-link"><a href="https://htmlacademy.ru/"><img src="images/htmlacademy-logo.svg" alt="логотип htmlacademy." width="114.9" height="32.9"></a></p>
+    <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-our-link" href="https://htmlacademy.ru/"><img src="images/htmlacademy-logo.svg" alt="логотип htmlacademy." width="114.9" height="32.9"></a>
   </footer>
 </body>
 </html>
