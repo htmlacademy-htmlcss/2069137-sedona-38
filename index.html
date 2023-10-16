@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -18,12 +19,13 @@
             <a href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="nav-item">
-            <a href="#"><span class="visually-hidden">Избранные</span><span class="header-favorites-value">12</span></a>
+            <a href="#"><span class="visually-hidden">Избранные </span><span class="header-favorites-value">12</span></a>
           </li>
-          <li class="nav-item"><a href="#">Хочу сюда!</a></li>
+          <li class="nav-item"><a class="index-button" href="#">Хочу сюда!</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="main-index" data-test="main">
       <h1 class="main-title visually-hidden">Уютный городок Sedona</h1>
 
@@ -85,7 +87,7 @@
         <h2 class="search-hotel-title visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="search-hotel-lead">Заинтересовались?</p>
         <p class="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-hotel-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-hotel-link index-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
       <section class="follow-us follow-us-index" data-test="subscribe">
@@ -94,7 +96,7 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="follow-us-email">Введите e-mail</label>
           <input class="follow-us-input" id="follow-us-email" name="your-email" type="email" placeholder="Ваш e-mail">
-          <button class="follow-us-submit" type="submit">Подписаться</button>
+          <button class="follow-us-submit catalog-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

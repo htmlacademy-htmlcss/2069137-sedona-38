@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header" data-test="header">
@@ -18,9 +19,9 @@
           <a href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="nav-item">
-          <a href="#"><span class="visually-hidden">Избранные</span><span class="header-favorites-value">12</span></a>
+          <a href="#"><span class="visually-hidden">Избранные </span><span class="header-favorites-value">12</span></a>
         </li>
-        <li class="nav-item"><a href="#">Хочу сюда!</a></li>
+        <li class="nav-item"><a class="index-button" href="#">Хочу сюда!</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +36,7 @@
 
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-hotel-includes">
-          <legend class="hotel-includes-title">Инфраструктура:</legend>
+          <legend class="hotel-filter-title">Инфраструктура:</legend>
           <ul class="hotel-includes-list">
             <li class="hotel-includes-item">
               <label class="infrastucture">
@@ -59,7 +60,7 @@
         </fieldset>
 
         <fieldset class="filter-hotel-housing">
-          <legend class="hotel-housing-title">Тип жилья:</legend>
+          <legend class="hotel-filter-title">Тип жилья:</legend>
           <ul class="hotel-housing-list">
             <li class="hotel-housing-item">
               <label class="housing-type">
@@ -83,7 +84,7 @@
         </fieldset>
 
         <fieldset class="filter-hotel-price">
-          <legend class="hotel-price-title">Стоимость, ₽:</legend>
+          <legend class="hotel-filter-title">Стоимость, ₽:</legend>
           <label class="price-label">
             <span class="visually-hidden">Цена от</span>
             <input class="price-input" type="number" placeholder="от" value="0" min="0" max="10000">
@@ -94,14 +95,14 @@
           </label>
         </fieldset>
         <div class="filter-button-container">
-          <button class="filter-submit-button">Применить</button>
+          <button class="filter-submit-button catalog-button">Применить</button>
           <button class="filter-reset-button">Сбросить</button>
         </div>
       </form>
     </header>
 
     <section class="hotel-catalog" data-test="catalog">
-      <h2 class="hotel-catalog-title">Гостиницы Седона</h2>
+      <h2 class="hotel-catalog-title visually-hidden">Каталог гостиниц</h2>
       <div class="hotel-catalog-wrapper">
         <p class="sorting-result">Найдено гостиниц: <span class="sorting-result-value">38</span></p>
         <div class="hotel-catalog-sort">
@@ -259,7 +260,7 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="follow-us-email">Введите e-mail</label>
         <input class="follow-us-input" id="follow-us-email" name="your-email" type="email" placeholder="Ваш e-mail">
-        <button class="follow-us-submit" type="submit">Подписаться</button>
+        <button class="follow-us-submit catalog-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
