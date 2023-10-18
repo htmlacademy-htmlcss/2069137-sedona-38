@@ -52,6 +52,8 @@ body {
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
+  color: #ffffff;
+  background-color: #7DB54F;
 }
 
 /* index-hero */
@@ -59,6 +61,7 @@ body {
 .hero {
   background-image: url('../images/hero-background.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -66,8 +69,12 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
+.hero-subtitle {
+  text-align: center;
+}
 /* advantages */
 
 .advantages-item:first-child, .advantages-item:last-child {
@@ -88,11 +95,13 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 /* services */
@@ -102,6 +111,11 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.services-description {
+  text-align: center;
 }
 
 .services-item-title {
@@ -109,11 +123,13 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .services-item-description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 .services-item:nth-child(2n-1) {
@@ -127,6 +143,11 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.search-hotel-description {
+  text-align: center;
 }
 
 .search-hotel-link {
@@ -266,6 +287,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  text-align: right;
 }
 
 .pagination-link {
