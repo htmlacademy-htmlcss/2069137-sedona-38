@@ -108,6 +108,7 @@
       <div class="catalog-main-container">
         <section class="hotel-catalog" data-test="catalog">
           <h2 class="hotel-catalog-title visually-hidden">Каталог гостиниц</h2>
+
           <div class="hotel-catalog-wrapper">
             <p class="sorting-result">Найдено гостиниц: <span class="sorting-result-value">38</span></p>
             <div class="hotel-catalog-sort">
@@ -116,7 +117,7 @@
               </select>
               <ul class="hotels-view-list">
                 <li class="hotels-view-item">
-                  <button class="hotels-view-button hotels-table" type="button"><span class="visually-hidden">табличная раскладка</span></button>
+                  <button class="hotels-view-button hotels-table hotels-view-current" type="button"><span class="visually-hidden">табличная раскладка</span></button>
                 </li>
                 <li class="hotels-view-item">
                   <button class="hotels-view-button hotels-big" type="button"><span class="visually-hidden">большие карточки</span></button>
@@ -127,6 +128,7 @@
               </ul>
             </div>
           </div>
+
           <ul class="hotels-list">
             <li class="hotels-item">
               <img class="hotel-image" src="images/hotel-1.jpg" alt="Вид из пещеры на звёздное небо." width="300" height="212">
@@ -254,15 +256,15 @@
             <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-            <li class="pagination-item"><p class="pagination-more">...</p></li>
+            <li class="pagination-item"><a class="pagination-link pagination-more" href="#">...</a></li>
             <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
           </ul>
         </section>
 
         <section class="follow-us" data-test="subscribe">
           <h2 class="follow-us-title">Подпишитесь на рассылку</h2>
-          <p class="follow-us-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <p class="follow-us-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="follow-us-form">
             <label class="visually-hidden" for="follow-us-email">Введите e-mail</label>
             <input class="follow-us-input" id="follow-us-email" name="your-email" type="email" placeholder="Ваш e-mail">
             <button class="follow-us-submit catalog-button" type="submit">Подписаться</button>
