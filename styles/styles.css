@@ -586,6 +586,7 @@ body {
 }
 
 .hotel-filter-title {
+  margin: 0;
   margin-bottom: 32px;
   font-size: 20px;
   line-height: 24px;
