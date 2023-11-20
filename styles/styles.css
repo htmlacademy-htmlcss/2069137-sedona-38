@@ -576,7 +576,7 @@ body {
   gap: 88px;
 }
 
-.modal-label-container label {
+.modal-label-container > div {
   display: flex;
   align-items: center;
 }
@@ -590,6 +590,12 @@ body {
   border: none;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
+}
+
+.adults-counter-span, .children-counter-span {
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
 }
 
