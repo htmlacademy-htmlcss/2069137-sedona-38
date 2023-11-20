@@ -507,7 +507,7 @@ body {
 /* modal */
 .modal-back {
   position: fixed;
-  display: flex;
+  display: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -579,20 +579,52 @@ body {
 .modal-label-container label {
   display: flex;
   align-items: center;
-  gap: 46px;
 }
 
 .modal-label-container input {
-  width: 110px;
+  width: 31px;
   height: 48px;
-  padding: 14px 50px;
+  padding: 14px 10px;
   box-sizing: border-box;
   background-color: #F2F2F2;
   border: none;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  border-radius: 4px;
+}
+
+.input-minus, .input-plus {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  padding: 0;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.input-minus {
+  margin-left: 46px;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-minus::before {
+  position: absolute;
+  top: 23px;
+  left: 13px;
+  width: 14px;
+  height: 2px;
+  content: '';
+  background-color: #7561574D;
+}
+
+.input-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.input-plus svg {
+  position: absolute;
+  top: 17px;
+  right: 13px;
 }
 
 .children-counter-span {
